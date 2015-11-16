@@ -9,6 +9,7 @@
 	<meta name="theme-color" content="#fff">
 	<!-- <meta name="viewport" content="width=1200"> -->
 	<!-- <meta name="viewport" content="initial-scale=1, user-scalable=no"> -->
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif+Caption:400,400italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" media="all" href="css/screen.css" >
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/app.js"></script>
@@ -16,9 +17,205 @@
 <body>
 <!-- BEGIN  out-->
 <div class="out">
-	<i class="icon-sepa"></i>
-	//= partials/partial.html
-
+	<!-- header -->
+	<header class="header">
+		<nav class="menu">
+			<ul>
+				<li><a href="#" class="is-active">О Perfect Ring</a></li>
+				<li><a href="#">Преимущества</a></li>
+				<li><a href="#">Тарифы</a></li>
+				<li><a href="#">Доставка и примерка</a></li>
+				<li><a href="#">Отзывы</a></li>
+			</ul>
+		</nav>
+		<button type="button" class="buy-btn">купить</button>
+	</header>
+	
+	<!-- fullpage -->
+	<div id="fullpage">
+		<!-- banners -->
+		<div class="section topper">
+			<div class="logo-wrap">
+				<a href="#" class="logo">
+					<img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<div class="banners js-banners">
+				<div class="banner" style="background-image: url(img/banner1.jpg);"></div>
+				<div class="banner" style="background-image: url(img/banner2.jpg);"></div>
+			</div>
+			<button type="button" class="scroll-down">
+				<img src="img/scroll.png" alt="">
+			</button>
+		</div>
+		<!-- about -->
+		<div class="section">
+			<div class="about">
+				<div class="center">
+					<div class="row">
+						<div class="col-6">
+							<div class="about__info">
+								<div class="title">О PERFECT RING</div>
+								<h2 class="h2">ОСОБЕННЫЕ КОЛЬЦА</h2>
+								<p>Обычные кольца из магазина лишены индивидуальности. Среди сотен тысяч одинаковых колец трудно найти своё, то, которое которое навсегда. Поэтому мы создали <i>Perfect Ring</i> — мастерскую, где создаём уникальные кольца для уникальных семейных пар. <i>Perfect Ring</i> - не просто идеальное сочетание формы и содержания, это совершенно новый подход - обручальные кольца, которые преображаются с каждым годом совместной жизни.</p>
+							</div>
+						</div>
+						<div class="col-6">
+							<div class="rings">
+								<img src="img/rings.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- benefits -->
+		<div class="section">
+			<div class="benefits">
+				<div class="center">
+					<div class="benefits__list">
+						<div class="benefit">
+							<div class="benefit__img">
+								<img src="img/img1.png" alt="">
+							</div>
+							<div class="title">Совершенный дизайн</div>
+							<h4 class="h4">создано лучшими ювелирами</h4>
+							<p>Мы верим в классический дизайн обручальных колец. Он строг и минималистичен, но при этом практически идеален, словно заглаженный океаном камушек.</p>
+						</div>
+						<div class="benefit">
+							<div class="benefit__img">
+								<img src="img/img2.png" alt="">
+							</div>
+							<div class="title">Совершенный дизайн</div>
+							<h4 class="h4">создано лучшими ювелирами</h4>
+							<p>Мы верим в классический дизайн обручальных колец. Он строг и минималистичен, но при этом практически идеален, словно заглаженный океаном камушек.</p>
+						</div>
+						<div class="benefit">
+							<div class="benefit__img">
+								<img src="img/img3.png" alt="">
+							</div>
+							<div class="title">Совершенный дизайн</div>
+							<h4 class="h4">создано лучшими ювелирами</h4>
+							<p>Мы верим в классический дизайн обручальных колец. Он строг и минималистичен, но при этом практически идеален, словно заглаженный океаном камушек.</p>
+						</div>
+						<div class="benefit">
+							<div class="benefit__img">
+								<img src="img/img4.png" alt="">
+							</div>
+							<div class="title">Совершенный дизайн</div>
+							<h4 class="h4">создано лучшими ювелирами</h4>
+							<p>Мы верим в классический дизайн обручальных колец. Он строг и минималистичен, но при этом практически идеален, словно заглаженный океаном камушек.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- price -->
+		<div class="section">
+			<div class="price">
+				<div class="center">
+					<div class="price__in">
+						<!-- card -->
+						<div class="card">
+							<div class="card__img">
+								<img src="img/rings-big.jpg" alt="">
+							</div>
+							<h3 class="h3">Perfect Ring</h3>
+							<ul class="card__list">
+								<li><strong>2</strong> Обручальных кольца Perfect Ring</li>
+								<li><strong>+1</strong> Бриллиант на годовщину свадьбы</li>
+								<li><strong>+1</strong> Полировка на полировка на годовщину</li>
+							</ul>
+							<div class="card__params">
+								<div class="select js-select">
+								    <div class="select__text"><span>он</span><span class="js-select-text">размер</span></div>
+								    <ul class="select__list js-select-list">
+								        <li data-val="var0">14.5</li>
+								        <li data-val="var1">15</li>
+								        <li data-val="var2">16</li>
+								        <li data-val="var3">17.5</li>
+								    </ul>
+								    <select>
+								        <option value="var0">14.5</option>
+								        <option value="var1">15</option>
+								        <option value="var2">16</option>
+								        <option value="var3">17.5</option>
+								    </select>
+								</div>
+								<div class="select js-select">
+								    <div class="select__text"><span>она</span><span class="js-select-text">размер</span></div>
+								    <ul class="select__list js-select-list">
+								        <li data-val="var0">14.5</li>
+								        <li data-val="var1">15</li>
+								        <li data-val="var2">16</li>
+								        <li data-val="var3">17.5</li>
+								    </ul>
+								    <select>
+								        <option value="var0">14.5</option>
+								        <option value="var1">15</option>
+								        <option value="var2">16</option>
+								        <option value="var3">17.5</option>
+								    </select>
+								</div>
+							</div>
+							<div class="card__price">120000 руб.</div>
+							<div class="card__buy">
+								<button type="button" class="btn">КУПИТЬ</button>
+							</div>
+						</div>
+						<!-- card -->
+						<div class="card">
+							<div class="card__img">
+								<img src="img/rings-big.jpg" alt="">
+							</div>
+							<h3 class="h3">Perfect Ring <span>five</span></h3>
+							<ul class="card__list">
+								<li><strong>2</strong> Обручальных кольца Perfect Ring</li>
+								<li><strong>+1</strong> Бриллиант на годовщину свадьбы</li>
+								<li><strong>+1</strong> Полировка на полировка на годовщину</li>
+							</ul>
+							<div class="card__params">
+								<div class="select js-select">
+								    <div class="select__text"><span>он</span><span class="js-select-text">размер</span></div>
+								    <ul class="select__list js-select-list">
+								        <li data-val="var0">14.5</li>
+								        <li data-val="var1">15</li>
+								        <li data-val="var2">16</li>
+								        <li data-val="var3">17.5</li>
+								    </ul>
+								    <select>
+								        <option value="var0">14.5</option>
+								        <option value="var1">15</option>
+								        <option value="var2">16</option>
+								        <option value="var3">17.5</option>
+								    </select>
+								</div>
+								<div class="select js-select">
+								    <div class="select__text"><span>она</span><span class="js-select-text">размер</span></div>
+								    <ul class="select__list js-select-list">
+								        <li data-val="var0">14.5</li>
+								        <li data-val="var1">15</li>
+								        <li data-val="var2">16</li>
+								        <li data-val="var3">17.5</li>
+								    </ul>
+								    <select>
+								        <option value="var0">14.5</option>
+								        <option value="var1">15</option>
+								        <option value="var2">16</option>
+								        <option value="var3">17.5</option>
+								    </select>
+								</div>
+							</div>
+							<div class="card__price">120000 руб.</div>
+							<div class="card__buy">
+								<button type="button" class="btn">КУПИТЬ</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 <!-- END out-->
 </body>
