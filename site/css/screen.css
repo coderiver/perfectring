@@ -264,6 +264,40 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 
 .buy { position: relative; height: 100vh; background: url(../img/wall.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; }
 .buy .btn-round { position: absolute; top: 50%; left: 50%; width: 236px; height: 236px; margin: -123px 0 0 -109px; -webkit-border-radius: 50%; border-radius: 50%; background: #a60000; vertical-align: middle; text-align: center; font-family: "ProximaNova-Bold"; font-weight: normal; font-style: normal; text-transform: uppercase; color: #f5f5f7; font-size: 32px; }
+
+.contacts { position: relative; height: 100vh; }
+
+.map { position: absolute; top: 0; left: 0; right: 0; bottom: 260px; }
+
+.map-popup { position: absolute; top: 170px; left: 50%; width: 385px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: #fff; padding: 25px 15px; text-align: center; font-size: 18px; color: #2a2a2a; line-height: 1.4; }
+.map-popup p { line-height: 1.4; margin-top: 20px; }
+.map-popup .map-popup__topper { font-family: "ProximaNova-Bold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
+
+#map-canvas { position: absolute; top: 0; bottom: 0; right: 0; left: 0; }
+
+.footer { position: absolute; bottom: 0; right: 0; left: 0; height: 260px; padding: 55px 0 60px; background: #1e1e1e; }
+.footer .footer__in { max-width: 1180px; margin: 0 auto; *zoom: 1; }
+.footer .footer__in:after { content: " "; display: table; clear: both; }
+.footer .footer__left { float: left; margin-right: 7%; }
+.footer .footer__logo { display: inline-block; margin-bottom: 80px; }
+.footer .footer__list { float: left; margin-right: 5%; }
+.footer .footer__list ul li { margin-bottom: 40px; }
+.footer .footer__list ul li a { font-family: "ProximaNova-Semibold"; font-weight: normal; font-style: normal; text-transform: uppercase; color: #fff; font-size: 13px; text-decoration: none; }
+
+.socials { font-size: 0; text-align: right; }
+.socials li { display: inline-block; vertical-align: middle; margin-left: 22px; }
+
+.icon-instagram { display: inline-block; vertical-align: middle; background-image: url("../img/icons.png"); width: 20px; height: 21px; background-position: -32px -65px; }
+
+.icon-fb { display: inline-block; vertical-align: middle; background-image: url("../img/icons.png"); width: 11px; height: 21px; background-position: 0px -90px; }
+
+.icon-vk { display: inline-block; vertical-align: middle; background-image: url("../img/icons.png"); width: 28px; height: 21px; background-position: 0px -65px; }
+
+.authors { float: right; }
+.authors .authors__labels { font-size: 0; margin-bottom: 35px; }
+.authors .authors__labels a { display: inline-block; vertical-align: top; margin-left: 55px; }
+.authors .copyrights { padding-right: 18px; text-align: right; }
+.authors .copyrights a { font-family: "ProximaNova-Semibold"; font-weight: normal; font-style: normal; color: #fff; text-transform: uppercase; text-decoration: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 1440px){
@@ -286,7 +320,12 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .comments .comments__item{ font-size: 16px; }
  .comments .comments__author{ padding-top: 30px; font-size: 19px; }
  .history .history__item p{ font-size: 16px; line-height: 1.6; }
- .buy .btn-round{ width: 200px; height: 200px; margin: -109px 0 0 -92px; } }
+ .buy .btn-round{ width: 200px; height: 200px; margin: -109px 0 0 -92px; }
+ .map{ bottom: 200px; }
+ .map-popup{ top: 120px; width: 320px; }
+ .footer{ height: 200px; padding: 35px 0 40px; }
+ .footer .footer__logo{ margin-bottom: 60px; }
+ .footer .footer__list ul li{ margin-bottom: 25px; } }
 @media only screen and (max-width: 1280px){
  .h2{ font-size: 24px; margin-bottom: 30px; }
  .h3{ margin-bottom: 10px; font-size: 20px; }
@@ -310,7 +349,8 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .delivery .delivery__tag:after{ bottom: -14px; }
  .feedback{ padding-top: 50px; }
  .feedback .feedback__img img{ width: 350px; height: 350px; }
- .buy .btn-round{ width: 180px; height: 180px; margin: -95px 0 0 -83px; } }
+ .buy .btn-round{ width: 180px; height: 180px; margin: -95px 0 0 -83px; }
+ .map-popup{ top: 80px; font-size: 16px; } }
 @media print{
  html.fp-enabled, .fp-enabled body{ overflow: visible !important; height: auto !important; }
  html{ background: #fff; width: auto; height: auto; overflow: visible; }

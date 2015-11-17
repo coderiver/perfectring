@@ -478,6 +478,125 @@
 			height: 180px
 			margin: -95px 0 0 -83px
 
+// contacts
+.contacts
+	position: relative
+	height: 100vh
+.map
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 260px
+	+r(1440)
+		bottom: 200px
+.map-popup
+	position: absolute
+	top: 170px
+	left: 50%
+	width: 385px
+	transform: translateX(-50%)
+	background: #fff
+	padding: 25px 15px
+	text-align: center
+	font-size: 18px
+	color: #2a2a2a
+	line-height: 1.4
+	p
+		line-height: 1.4
+		margin-top: 20px
+	.map-popup__topper
+		+proxima-b
+		text-transform: uppercase
+	+r(1440)
+		top: 120px
+		width: 320px
+	+r(1280)		
+		top: 80px
+		font-size: 16px
+
+#map-canvas
+	position: absolute
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0	
+.footer
+	position: absolute
+	bottom: 0
+	right: 0
+	left: 0
+	height: 260px
+	padding: 55px 0 60px 
+	background: #1e1e1e
+	+r(1440)
+		height: 200px
+		padding: 35px 0 40px  
+	.footer__in
+		max-width: 1180px
+		margin: 0 auto
+		+clr
+	.footer__left
+		float: left
+		margin-right: 7%
+	.footer__logo	
+		display: inline-block
+		margin-bottom: 80px
+		+r(1440)
+			margin-bottom: 60px
+	.footer__list
+		float: left
+		margin-right: 5%
+		ul
+			li
+				margin-bottom: 40px
+				a
+					+proxima-sb
+					text-transform: uppercase
+					color: #fff
+					font-size: 13px
+					text-decoration: none
+				+r(1440)
+					margin-bottom: 25px		
+.socials
+	font-size: 0
+	text-align: right
+	li
+		display: inline-block
+		vertical-align: middle
+		margin-left: 22px 		
+.icon-instagram
+	display: inline-block
+	vertical-align: middle
+	+s(instagram)
+.icon-fb
+	display: inline-block
+	vertical-align: middle
+	+s(fb)
+.icon-vk
+	display: inline-block
+	vertical-align: middle
+	+s(vk)
+.authors
+	float: right
+	.authors__labels
+		font-size: 0
+		margin-bottom: 35px 
+		a
+			display: inline-block
+			vertical-align: top
+			margin-left: 55px
+	.copyrights
+		padding-right: 18px
+		text-align: right
+		a
+			+proxima-sb
+			color: #fff
+			text-transform: uppercase
+			text-decoration: none 		
+
+
+
 
 
 
