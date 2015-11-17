@@ -93,6 +93,19 @@ $(document).ready(function() {
 		dots: true
 	});
 
+	$('.js-comments').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1
+	});
+
+	$('.js-comments').on('afterChange', function(event, slick, currentSlide, nextSlide){
+		var comemntIndex = $('.js-comments').slick('slickCurrentSlide');
+		comemntIndex = comemntIndex + 1;
+		$('.js-counter').text(comemntIndex);
+	});
+
+	
+
 	// select
     $(document).click(function() {
         $(".js-select").removeClass("is-active");

@@ -118,6 +118,7 @@
 .center
 	display: inline-block
 	vertical-align: middle
+	width: 100% 
 	max-width: 1180px
 	font-size: 14px
 	margin: 0 auto
@@ -208,7 +209,8 @@
 	.price__in
 		+clr
 .card
-	float: left
+	display: inline-block
+	vertical-align: top
 	margin-left: 100px 
 	width: 520px
 	padding: 38px 45px 45px 
@@ -279,13 +281,202 @@
 	+proxima-b
 	color: #fff  
 
+// delivery
+.delivery
+	position: relative
+	max-width: 1180px
+	margin: 0 auto 
+	text-align: center
+	height: 100vh
+	padding-top: 68px
+	+vertical
+	+r(1440)
+		padding-top: 60px
+	+r(1280)
+		padding-top: 50px
+	.center
+		width: 100%
+	.title
+		margin-bottom: 75px	
+	.delivery__list
+		+clr
+		margin-top: 85px
+		&:first-child
+			margin-top: 0
+	.delivery__item
+		position: relative
+		float: left
+		width: 50%
+		&:first-child
+			&:after
+				content: ""
+				position: absolute
+				top: 50%
+				right: 0
+				height: 92px
+				margin-top: -46px  
+				width: 2px
+				background: #d0cfcf
+		p
+			max-width: 240px
+			margin: 0 auto
+			font-size: 18px
+			line-height: 1.4		 
+	.delivery__tag
+		position: relative
+		margin-bottom: 28px
+		font-size: 12px
+		color: #8a8989
+		text-transform: uppercase
+		+proxima-sb
+		&:after
+			content: ""
+			position: absolute
+			bottom: -18px
+			left: 50%
+			margin-left: -2px
+			width: 4px
+			height: 4px
+			border-radius: 50%
+			background: #a60000
+		+r(1280)
+			&:after
+				bottom: -14px 
 
-
-
-
-
-
-
+.feedback
+	position: relative
+	height: 100vh
+	padding-top: 68px
+	text-align: center
+	background: #f2ebe5 
+	+vertical
+	.feedback__in
+		+clr
+	.feedback__img
+		width: 48%
+		float: left
+		padding-right: 5% 
+		text-align: right
+		font-size: 0
+		img
+			width: 450px
+			height: 450px
+			border-radius: 50%
+	+r(1440)
+		padding-top: 60px
+		.feedback__img
+			img
+				width: 400px
+				height: 400px
+	+r(1280)
+		padding-top: 50px
+		.feedback__img
+			img
+				width: 350px
+				height: 350px	
+.comments
+	position: relative
+	width: 52%
+	float: left
+	text-align: left
+	.comments__item
+		font-size: 19px
+	.comments__author
+		padding-top: 45px
+		font-style: italic
+		font-size: 23px
+	+r(1440)
+		.comments__item
+			font-size: 16px
+		.comments__author
+			padding-top: 30px
+			font-size: 19px
+	.comments__counter
+		position: absolute
+		bottom: -84px
+		left: 60px
+		width: 40px
+		text-align: center
+		font-size: 18px
+		color: #a60000
+		+proxima-b 
+		
+// history
+.history
+	position: relative
+	height: 100vh
+	max-width: 1180px
+	margin: 0 auto 
+	padding-top: 68px
+	text-align: center
+	+vertical
+	.history__in
+		position: relative 
+		+clr
+	.history__item
+		position: relative
+		float: left
+		width: 50%
+		padding: 0 120px
+		p
+			font-size: 18px
+			line-height: 1.8 
+		&:before
+			content: ""
+			position: absolute
+			bottom: 50px
+			left: 0
+			height: 92px 
+			width: 2px
+			background: #d0cfcf
+		&:first-child
+			&:before
+				top: 50px
+				bottom: auto
+				right: 0
+				left: auto
+	+r(1440)
+		.history__item
+			p
+				font-size: 16px
+				line-height: 1.6 			
+.round
+	display: inline-block
+	width: 4px
+	height: 4px
+	margin: 10px 0
+	border-radius: 50%
+	background: #a60000 				
+						
+// buy
+.buy
+	position: relative
+	height: 100vh
+	background: url(../img/wall.jpg) 
+	+cover
+	.btn-round
+		position: absolute
+		top: 50%
+		left: 50%
+		width: 236px
+		height: 236px
+		margin: -123px 0 0 -109px 
+		border-radius: 50%
+		background: #a60000
+		vertical-align: middle
+		text-align: center
+		+proxima-b
+		text-transform: uppercase
+		color: #f5f5f7
+		font-size: 32px
+		+r(1440)
+			width: 200px
+			height: 200px
+			margin: -109px 0 0 -92px	    	
+		+r(1280)
+			width: 180px
+			height: 180px
+			margin: -95px 0 0 -83px
 
 
 
