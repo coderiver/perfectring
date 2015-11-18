@@ -15,29 +15,29 @@
 		height: 50px	 
 .menu
 	display: inline-block
-	ul
-		font-size: 0
-		li
-			display: inline-block
-			vertical-align: middle
-			padding: 22px 
+	font-size: 0
+	li
+		display: inline-block
+		vertical-align: middle
+		padding: 22px 
+		a
+			+proxima-sb
+			text-transform: uppercase
+			font-size: 14px
+			text-decoration: none
+			color: #212121
+			transition: color 300ms
+			&:hover
+				color: #bf2931
+		&.active
 			a
-				+proxima-sb
-				text-transform: uppercase
-				font-size: 14px
-				text-decoration: none
-				color: #212121
-				transition: color 300ms
-				&:hover, &.is-active
-					color: #bf2931
+				color: #bf2931		
 	+r(1440)
-		ul
-			li
-				padding: 18px 22px
+		li
+			padding: 18px 22px
 	+r(1280)
-		ul
-			li
-				padding: 15px 22px 				
+		li
+			padding: 15px 22px 				
 .buy-btn
 	position: absolute
 	top: 0

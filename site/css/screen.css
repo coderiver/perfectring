@@ -163,11 +163,11 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 .fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell { height: auto !important; }
 .header { position: fixed; top: 0; left: 0; right: 0; height: 68px; background: #fff; text-align: center; font-size: 0; z-index: 9; }
 
-.menu { display: inline-block; }
-.menu ul { font-size: 0; }
-.menu ul li { display: inline-block; vertical-align: middle; padding: 22px; }
-.menu ul li a { font-family: "ProximaNova-Semibold"; font-weight: normal; font-style: normal; text-transform: uppercase; font-size: 14px; text-decoration: none; color: #212121; -webkit-transition: color 300ms; transition: color 300ms; }
-.menu ul li a:hover, .menu ul li a.is-active { color: #bf2931; }
+.menu { display: inline-block; font-size: 0; }
+.menu li { display: inline-block; vertical-align: middle; padding: 22px; }
+.menu li a { font-family: "ProximaNova-Semibold"; font-weight: normal; font-style: normal; text-transform: uppercase; font-size: 14px; text-decoration: none; color: #212121; -webkit-transition: color 300ms; transition: color 300ms; }
+.menu li a:hover { color: #bf2931; }
+.menu li.active a { color: #bf2931; }
 
 .buy-btn { position: absolute; top: 0; right: 0; height: 68px; padding: 0 22px; vertical-align: middle; background: #1e1e1e; color: #fff; text-transform: uppercase; font-size: 14px; font-family: "ProximaNova-Bold"; font-weight: normal; font-style: normal; }
 
@@ -305,7 +305,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .h3{ margin-bottom: 20px; }
  .h4{ margin-bottom: 20px; }
  .header{ height: 60px; }
- .menu ul li{ padding: 18px 22px; }
+ .menu li{ padding: 18px 22px; }
  .buy-btn{ height: 60px; }
  .about{ padding-top: 60px; }
  .rings{ width: 80%; }
@@ -333,7 +333,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .select__text{ height: 36px; line-height: 34px; }
  .select__text span{ height: 32px; }
  .header{ height: 50px; }
- .menu ul li{ padding: 15px 22px; }
+ .menu li{ padding: 15px 22px; }
  .buy-btn{ height: 50px; }
  .about{ padding-top: 50px; }
  .benefits{ padding-top: 50px; }

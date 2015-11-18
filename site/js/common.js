@@ -2,7 +2,11 @@ $(document).ready(function() {
 	
 	// fullpage init
 
-	$('#fullpage').fullpage();
+	$('#fullpage').fullpage({
+		menu: '#menu',
+		anchors:['home', 'about', 'benefits', 'price',
+		'delivery', 'feedback', 'history', 'order', 'contacts']
+	});
 
 	// banners slider init
 
