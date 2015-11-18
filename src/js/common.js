@@ -5,7 +5,20 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 		menu: '#menu',
 		anchors:['home', 'about', 'benefits', 'price',
-		'delivery', 'feedback', 'history', 'order', 'contacts']
+		'delivery', 'feedback', 'history', 'order', 'contacts'],
+		afterLoad: function(anchorLink, index){
+            var loadedSection = $(this);
+
+            if (index == 1) {
+            	setTimeout(function(){
+            		loadedSection.find('.js-show').addClass('is-visible');
+            	}, 500);
+            }
+            else {
+            	loadedSection.find('.js-show').addClass('is-visible');
+            }
+
+        }
 	});
 
 	// banners slider init
