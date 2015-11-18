@@ -6,6 +6,7 @@ $(document).ready(function() {
 		menu: '#menu',
 		anchors:['home', 'about', 'benefits', 'price',
 		'delivery', 'feedback', 'history', 'order', 'contacts'],
+		responsiveWidth: 1023,
 		afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
 

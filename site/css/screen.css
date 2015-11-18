@@ -304,7 +304,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 
 .map { position: absolute; top: 0; left: 0; right: 0; bottom: 260px; }
 
-.map-popup { position: absolute; top: 170px; left: 50%; width: 385px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: #fff; padding: 25px 15px; text-align: center; font-size: 18px; color: #2a2a2a; line-height: 1.4; opacity: 0; -webkit-transform: scale(1.3) translateX(-50%); -ms-transform: scale(1.3) translateX(-50%); transform: scale(1.3) translateX(-50%); -webkit-transition: opacity 300ms, -webkit-transform 300ms; transition: opacity 300ms, transform 300ms; }
+.map-popup { position: absolute; top: 170px; left: 50%; width: 385px; -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%); transform: translateX(-50%); background: #fff; padding: 25px 15px; text-align: center; font-size: 18px; color: #2a2a2a; line-height: 1.4; opacity: 0; -webkit-transform: scale(0.7) translateX(-50%); -ms-transform: scale(0.7) translateX(-50%); transform: scale(0.7) translateX(-50%); -webkit-transition: opacity 300ms, -webkit-transform 300ms; transition: opacity 300ms, transform 300ms; }
 .map-popup.is-visible { opacity: 1; -webkit-transform: scale(1) translateX(-50%); -ms-transform: scale(1) translateX(-50%); transform: scale(1) translateX(-50%); }
 .map-popup p { line-height: 1.4; margin-top: 20px; }
 .map-popup .map-popup__topper { font-family: "ProximaNova-Bold"; font-weight: normal; font-style: normal; text-transform: uppercase; }
