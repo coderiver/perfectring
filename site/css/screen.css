@@ -36,6 +36,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 @font-face { font-family: ProximaNova-Bold; src: url("fonts/ProximaNova-Bold.eot"); src: url("fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNova-Bold.woff2") format("woff2"), url("fonts/ProximaNova-Bold.woff") format("woff"), url("fonts/ProximaNova-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: ProximaNova-Semibold; src: url("fonts/ProximaNova-Semibold.eot"); src: url("fonts/ProximaNova-Semibold.eot?#iefix") format("embedded-opentype"), url("fonts/ProximaNova-Semibold.woff2") format("woff2"), url("fonts/ProximaNova-Semibold.woff") format("woff"), url("fonts/ProximaNova-Semibold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: "PT Serif Caption", serif; font-size: 17px; line-height: 1.4; color: #3e3e3e; }
+body.fixed { overflow: hidden !important; }
 
 p { line-height: 2; }
 
@@ -341,19 +342,19 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 .overlay:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
 .overlay .overlay__close { position: absolute; top: 0; bottom: 0; right: 0; left: 0; z-index: 1; }
 
-.modal { position: relative; display: inline-block; vertical-align: middle; width: 1100px; background: #fff; padding: 80px 100px; -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); font-size: 16px; text-align: left; opacity: 0; -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); -webkit-transition: opacity 300ms, -webkit-transform 300ms; transition: opacity 300ms, transform 300ms; z-index: 9; }
+.modal { position: relative; display: inline-block; vertical-align: middle; width: 1100px; background: #fff; padding: 80px 100px; -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); font-size: 16px; text-align: left; opacity: 0; -webkit-transform: scale(0.7); -ms-transform: scale(0.7); transform: scale(0.7); -webkit-transition: opacity 300ms, -webkit-transform 300ms, height 300ms; transition: opacity 300ms, transform 300ms, height 300ms; z-index: 9; }
 .modal.is-open { opacity: 1; -webkit-transform: scale(1); -ms-transform: scale(1); transform: scale(1); }
 .modal .modal__close { position: absolute; top: 30px; right: 30px; background: none; background-image: url("../img/icons.png"); width: 46px; height: 47px; background-position: 0px -65px; }
 
 .thanks { text-align: center; }
 .thanks .h3 { font-size: 23px; }
 .thanks .h4 { font-size: 20px; }
-.thanks p { font-style: italic; color: #7e0202; font-size: 22px; }
+.thanks p { font-style: italic; color: #7e0202; font-size: 22px; line-height: 1.4; }
 
 .form { *zoom: 1; }
 .form:after { content: " "; display: table; clear: both; }
-.form .form__right { float: right; width: 480px; margin-left: 90px; }
-.form .form__left { overflow: hidden; }
+.form .form__right { overflow: hidden; }
+.form .form__left { float: left; width: 340px; margin-right: 90px; }
 .form .form__row { display: block; margin-top: 42px; }
 .form .form__row:first-child { margin-top: 0; }
 
@@ -370,6 +371,8 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
 .item .item__img { float: left; width: 100px; margin-right: 30px; }
 .item .item__img img { display: block; width: 100%; }
 .item .item__title { margin-bottom: 20px; padding-top: 5px; font-size: 18px; text-transform: uppercase; font-family: "ProximaNova-Bold"; font-weight: normal; font-style: normal; color: #2a2a2a; }
+
+.order-btn-wrap button { max-width: 100%; }
 
 .quantity { margin: 15px 0 40px; font-size: 0; }
 .quantity .quantity__item { display: inline-block; vertical-align: middle; margin-left: 10%; }
@@ -446,10 +449,21 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .footer{ padding: 35px 10px 40px; }
  .footer .footer__left{ margin-right: 5%; } }
 
+@media only screen and (max-width: 1180px){
+ .modal{ width: 90%; padding: 80px 5% 5%; }
+ .modal .modal__close{ top: 20px; right: 20px; }
+ .form .form__left{ margin-right: 40px; }
+ .quantity .quantity__item{ display: block; margin-left: 0; margin-bottom: 20px; } }
+
 @media only screen and (max-width: 1100px){
  .card{ width: 440px; margin-left: 5%; }
  .map-popup{ top: 50%; -webkit-transform: scale(0.7) translate(-50%, -50%); -ms-transform: scale(0.7) translate(-50%, -50%); transform: scale(0.7) translate(-50%, -50%); }
  .map-popup.is-visible{ -webkit-transform: scale(1) translate(-50%, -50%); -ms-transform: scale(1) translate(-50%, -50%); transform: scale(1) translate(-50%, -50%); } }
+
+@media only screen and (max-width: 1024px){
+ .thanks .h3{ font-size: 20px; margin-bottom: 20px; }
+ .thanks .h4{ font-size: 16px; margin-bottom: 20px; }
+ .thanks p{ padding-bottom: 30px; } }
 
 @media only screen and (max-width: 1023px){
  .fp-section.fp-table, .fp-slide.fp-table{ height: auto !important; }
@@ -500,8 +514,16 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .feedback{ padding: 5% 10px 150px; }
  .feedback .feedback__img img{ width: 300px; } }
 
+@media only screen and (max-width: 840px){
+ .modal .modal__close{ right: 5%; }
+ .form .form__right{ overflow: visible; }
+ .form .form__left{ float: none; width: 100%; margin-bottom: 30px; }
+ .order-btn-wrap{ text-align: center; }
+ .quantity .quantity__item{ display: inline-block; margin-left: 10%; margin-bottom: 0; } }
+
 @media only screen and (max-width: 768px){
- .delivery .title{ margin-bottom: 45px; } }
+ .delivery .title{ margin-bottom: 45px; }
+ .form .form__row{ margin-top: 20px; } }
 
 @media only screen and (max-width: 767px){
  .slick-dots{ right: 20px; }
@@ -537,6 +559,10 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .footer .footer__list{ display: none; }
  .socials{ float: right; text-align: right; }
  .socials li{ margin-left: 22px; margin-right: 0; } }
+
+@media only screen and (max-width: 568px){
+ .modal .modal__close{ -webkit-transform: scale(0.6); -ms-transform: scale(0.6); transform: scale(0.6); top: 10px; right: 3%; }
+ .quantity .quantity__item{ display: block; margin-left: 0; margin-bottom: 20px; } }
 
 @media only screen and (max-width: 567px){
  .benefit{ width: 100%; }

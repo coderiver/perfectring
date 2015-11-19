@@ -31,11 +31,18 @@ $(document).ready(function() {
 			$('[data-target='+link+']').addClass('is-open');
 		}, 300);
 		$.fn.fullpage.setAllowScrolling(false);
+		if ($(window).width() < 1024) {
+			$('body').addClass('fixed');
+		};
 	});
 	$('.js-modal-close, .js-overlay-close').on('click', function(){
 		$(this).closest('.modal').removeClass('is-open');;
 		$(this).closest('.overlay').fadeOut();
 		$.fn.fullpage.setAllowScrolling(true);
+
+		if ($(window).width() < 1024) {
+			$('body').removeClass('fixed');
+		};
 
 		setTimeout(function(){
 			$('.js-modal-order').show();

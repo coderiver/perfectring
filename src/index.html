@@ -359,13 +359,30 @@
 	</div>
 </div>
 <!-- modals -->
-<div class="overlay">
+<div class="overlay" style="display: none;">
 	<div class="overlay__close js-overlay-close"></div>
-	<div class="modal is-open" data-target="buy-popup">
+	<div class="modal" data-target="buy-popup">
 		<button type="button" class="modal__close js-modal-close"></button>
 		<div class="modal__in js-modal-order">
 			<form action="#">
 				<div class="form">
+					<div class="form__left">
+						<label class="form__row">
+							<input class="input" type="text" placeholder="ИМЯ">
+						</label>
+						<label class="form__row">
+							<input class="input" type="text" placeholder="E-MAIL">
+						</label>
+						<label class="form__row">
+							<input class="input" type="text" placeholder="ТЕЛЕФОН">
+						</label>
+						<label class="form__row">
+							<input class="input" type="text" placeholder="АДРЕС">
+						</label>
+						<label class="form__row">
+							<textarea class="textarea" placeholder="КОМЕНТАРИИ"></textarea>
+						</label>
+					</div>
 					<div class="form__right">
 						<div class="item">
 							<div class="item__img">
@@ -415,7 +432,6 @@
 									    </select>
 									</div>
 								</div>
-
 							</div>
 						</div>
 						<div class="quantity">
@@ -437,27 +453,10 @@
 							<strong>120000руб.</strong>
 						</div>
 						<div class="hint">Бесплатная доставка и примерка в нашем офисе или курьер по Москве</div>
-						<div class="item__btn">
+						<div class="order-btn-wrap">
 							<button type="button" class="order-btn">КУПИТЬ</button>
 						</div>
-					</div>
-					<div class="form__left">
-						<label class="form__row">
-							<input class="input" type="text" placeholder="ИМЯ">
-						</label>
-						<label class="form__row">
-							<input class="input" type="text" placeholder="E-MAIL">
-						</label>
-						<label class="form__row">
-							<input class="input" type="text" placeholder="ТЕЛЕФОН">
-						</label>
-						<label class="form__row">
-							<input class="input" type="text" placeholder="АДРЕС">
-						</label>
-						<label class="form__row">
-							<textarea class="textarea" placeholder="КОМЕНТАРИИ"></textarea>
-						</label>
-					</div>
+					</div>			
 				</div>
 			</form>
 		</div>

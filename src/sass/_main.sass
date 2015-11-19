@@ -1042,29 +1042,62 @@
 		right: 30px
 		background: none
 		+s(close)
+	+r(1180)
+		width: 90%
+		padding: 80px 5% 5%
+		.modal__close
+			top: 20px
+			right: 20px 
+	+r(840)
+		.modal__close
+			right: 5%
+	+r(568)
+		.modal__close
+			transform: scale(0.6)
+			top: 10px
+			right: 3%		 	
 .thanks
 	text-align: center
 	.h3
 		font-size: 23px
+		+r(1024)
+			font-size: 20px
+			margin-bottom: 20px
 	.h4
 		font-size: 20px
+		+r(1024)
+			font-size: 16px
+			margin-bottom: 20px
 	p
 		font-style: italic
 		color: #7e0202
-		font-size: 22px 		
+		font-size: 22px
+		line-height: 1.4
+		+r(1024)
+			padding-bottom: 30px 		
 .form
 	+clr
 	.form__right
-		float: right
-		width: 480px
-		margin-left: 90px
-	.form__left
 		overflow: hidden
+		+r(840)
+			overflow: visible
+	.form__left
+		float: left
+		width: 340px
+		margin-right: 90px
+		+r(1180)
+			margin-right: 40px
+		+r(840)
+			float: none
+			width: 100%
+			margin-bottom: 30px 		
 	.form__row
 		display: block
 		margin-top: 42px
 		&:first-child
-			margin-top: 0 				
+			margin-top: 0
+		+r(768)
+			margin-top: 20px 	 				
 
 .input, .textarea
 	width: 100%
@@ -1098,7 +1131,12 @@
 		font-size: 18px
 		text-transform: uppercase
 		+proxima-b
-		color: #2a2a2a 
+		color: #2a2a2a
+.order-btn-wrap
+	button
+		max-width: 100%
+	+r(840)
+		text-align: center	
 
 .quantity
 	margin: 15px 0 40px 
@@ -1108,7 +1146,19 @@
 		vertical-align: middle
 		margin-left: 10%
 		&:first-child
-			margin-left: 0 
+			margin-left: 0
+		+r(1180)
+			display: block
+			margin-left: 0
+			margin-bottom: 20px
+		+r(840)
+			display: inline-block
+			margin-left: 10%
+			margin-bottom: 0
+		+r(568)
+			display: block
+			margin-left: 0
+			margin-bottom: 20px		 	
 	.quantity__minus, .quantity__value, .quantity__plus, .quantity__title
 		display: inline-block
 		vertical-align: middle 
