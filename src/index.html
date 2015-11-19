@@ -28,7 +28,7 @@
 			<li data-menuanchor="delivery"><a href="#delivery">Доставка и примерка</a></li>
 			<li data-menuanchor="feedback"><a href="#feedback">Отзывы</a></li>
 		</ul>
-		<button type="button" class="buy-btn">купить</button>
+		<button type="button" class="buy-btn js-buy-btn" data-link="buy-popup">купить</button>
 	</header>
 	
 	<!-- fullpage -->
@@ -358,6 +358,115 @@
 		</div>
 	</div>
 </div>
-<!-- END out-->
+<!-- modals -->
+<div class="overlay">
+	<div class="overlay__close js-overlay-close"></div>
+	<div class="modal is-open" data-target="buy-popup">
+		<button type="button" class="modal__close js-modal-close"></button>
+		<div class="modal__in js-modal-order">
+			<form action="#">
+				<div class="form">
+					<div class="form__right">
+						<div class="item">
+							<div class="item__img">
+								<img src="img/rings-big.jpg" alt="">
+							</div>
+							<div class="item__info">
+								<div class="item__title">Perfect Ring ДЛЯ НЕЕ</div>
+								<div class="item__select">
+									<div class="select js-select">
+									    <div class="select__text"><span class="js-select-text">размер</span></div>
+									    <ul class="select__list js-select-list">
+									        <li data-val="var0">14.5</li>
+									        <li data-val="var1">15</li>
+									        <li data-val="var2">16</li>
+									        <li data-val="var3">17.5</li>
+									    </ul>
+									    <select>
+									        <option value="var0">14.5</option>
+									        <option value="var1">15</option>
+									        <option value="var2">16</option>
+									        <option value="var3">17.5</option>
+									    </select>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="item__img">
+								<img src="img/rings-big.jpg" alt="">
+							</div>
+							<div class="item__info">
+								<div class="item__title">Perfect Ring ДЛЯ НЕГО</div>
+								<div class="item__select">
+									<div class="select js-select">
+									    <div class="select__text"><span class="js-select-text">размер</span></div>
+									    <ul class="select__list js-select-list">
+									        <li data-val="var0">14.5</li>
+									        <li data-val="var1">15</li>
+									        <li data-val="var2">16</li>
+									        <li data-val="var3">17.5</li>
+									    </ul>
+									    <select>
+									        <option value="var0">14.5</option>
+									        <option value="var1">15</option>
+									        <option value="var2">16</option>
+									        <option value="var3">17.5</option>
+									    </select>
+									</div>
+								</div>
+
+							</div>
+						</div>
+						<div class="quantity">
+							<div class="quantity__item">
+								<button class="quantity__minus">-</button>
+								<div class="quantity__value">3</div>
+								<button class="quantity__plus">+</button>
+								<div class="quantity__title">Бриллианта</div>
+							</div>
+							<div class="quantity__item">
+								<button class="quantity__minus">-</button>
+								<div class="quantity__value">2</div>
+								<button class="quantity__plus">+</button>
+								<div class="quantity__title">Полировки</div>
+							</div>
+						</div>
+						<div class="total-price">
+							<span>ИТОГО:</span>
+							<strong>120000руб.</strong>
+						</div>
+						<div class="hint">Бесплатная доставка и примерка в нашем офисе или курьер по Москве</div>
+						<div class="item__btn">
+							<button type="button" class="order-btn">КУПИТЬ</button>
+						</div>
+					</div>
+					<div class="form__left">
+						<label class="form__row">
+							<input class="input" type="text" placeholder="ИМЯ">
+						</label>
+						<label class="form__row">
+							<input class="input" type="text" placeholder="E-MAIL">
+						</label>
+						<label class="form__row">
+							<input class="input" type="text" placeholder="ТЕЛЕФОН">
+						</label>
+						<label class="form__row">
+							<input class="input" type="text" placeholder="АДРЕС">
+						</label>
+						<label class="form__row">
+							<textarea class="textarea" placeholder="КОМЕНТАРИИ"></textarea>
+						</label>
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="thanks js-thanks" style="display: none;">
+			<h3 class="h3">Спасибо за заказ.</h3>
+			<h4 class="h4">Мы свяжемся с вами в течение нескольких минут.</h4>
+			<p>С любовью, Perfect Ring.</p>
+		</div>
+	</div>
+</div>
 </body>
 </html>

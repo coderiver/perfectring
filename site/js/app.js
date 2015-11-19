@@ -102,6 +102,35 @@ $(document).ready(function() {
         }
 	});
 
+	// modals init
+
+	$('.js-buy-btn').on('click', function(){
+		var link = $(this).data('link');
+		$('.overlay').fadeIn();
+		setTimeout(function(){
+			$('[data-target='+link+']').addClass('is-open');
+		}, 300);
+		$.fn.fullpage.setAllowScrolling(false);
+	});
+	$('.js-modal-close, .js-overlay-close').on('click', function(){
+		$(this).closest('.modal').removeClass('is-open');;
+		$(this).closest('.overlay').fadeOut();
+		$.fn.fullpage.setAllowScrolling(true);
+
+		setTimeout(function(){
+			$('.js-modal-order').show();
+			$('.js-thanks').hide();
+		}, 300);
+		
+	});
+
+	// remove this code
+
+	$('.order-btn').on('click', function(){
+		$('.js-modal-order').hide();
+		$('.js-thanks').show();
+	});
+
 	// banners slider init
 
 	$('.js-banners').slick({
