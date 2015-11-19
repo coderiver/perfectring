@@ -13,8 +13,20 @@
 		height: 60px
 	+r(1280)
 		height: 50px
+.home
+	position: absolute
+	top: 50%
+	left: 20px
+	width: 20px
+	height: 20px
+	margin-top: -10px
+	border-radius: 50%
+	background: #bf2931   		
 .topper
-	height: 100vh 			 
+	height: 100vh
+	+r(1023)
+		height: 100vh!important
+		z-index: 2			 
 .menu
 	display: inline-block
 	font-size: 0
@@ -39,7 +51,9 @@
 			padding: 18px 22px
 	+r(1280)
 		li
-			padding: 15px 22px 				
+			padding: 15px 22px
+	+r(900)
+		display: none						
 .buy-btn
 	position: absolute
 	top: 0
@@ -85,7 +99,10 @@
 		width: 100%
 	&.is-visible
 		opacity: 1
-		transform: translateY(0) 	
+		transform: translateY(0)
+	+r(1023)
+		opacity: 1
+		transform: translateY(0)	 	
 .scroll-down
 	position: absolute
 	bottom: 96px
@@ -108,7 +125,10 @@
 		position: relative
 	&.is-visible
 		opacity: 1
-		transform: translate3d(-50%, 0, 0)		
+		transform: translate3d(-50%, 0, 0)
+	+r(1023)
+		opacity: 1
+		transform: translate3d(-50%, 0, 0)			
 
 // about
 .about
@@ -120,6 +140,10 @@
 		padding-top: 60px
 	+r(1280)
 		padding-top: 50px
+	+r(1023)
+		height: auto
+		padding: 5% 10px
+		overflow: hidden	
 	& > .center
 		text-align: left
 	.about__info
@@ -134,6 +158,9 @@
 			&.is-visible
 				opacity: 1
 				transform: translateY(0)
+			+r(1023)
+				opacity: 1
+				transform: translateY(0)	
 		.h2
 			opacity: 0
 			transform: translateY(40px)
@@ -141,13 +168,19 @@
 			&.is-visible
 				opacity: 1
 				transform: translateY(0)
+			+r(1023)
+				opacity: 1
+				transform: translateY(0)	
 		p
 			opacity: 0
 			transform: translateY(60px)
 			transition: transform 300ms, opacity 300ms
 			&.is-visible
 				opacity: 1
-				transform: translateY(0)		
+				transform: translateY(0)
+			+r(1023)
+				opacity: 1
+				transform: translateY(0)			
 .center
 	display: inline-block
 	vertical-align: middle
@@ -189,7 +222,10 @@
 		opacity: 1
 		transform: scale(1) 		
 	+r(1440)
-		width: 80% 		
+		width: 80%
+	+r(1023)
+		opacity: 1
+		transform: scale(1) 			
 
 .benefits
 	height: 100vh
@@ -198,7 +234,10 @@
 	+r(1440)
 		padding-top: 60px
 	+r(1280)
-		padding-top: 50px 	
+		padding-top: 50px
+	+r(1023)
+		height: auto
+		padding: 5% 10px 	 	
 	.benefits__list
 		+clr
 .benefit
@@ -209,18 +248,30 @@
 	&:first-child
 		transform: translateX(-100px)
 		transition: opacity 300ms 200ms, transform 300ms 200ms
+		+r(1023)
+			transform: translateX(0)
 	&:nth-child(2)
 		transform: translateX(-50px)
 		transition: opacity 300ms, transform 300ms
+		+r(1023)
+			transform: translateX(0)
 	&:nth-child(3)
 		transform: translateX(50px)
 		transition: opacity 300ms, transform 300ms
+		+r(1023)
+			transform: translateX(0)
 	&:nth-child(4)
 		transform: translateX(100px)
 		transition: opacity 300ms 200ms, transform 300ms 200ms
+		+r(1023)
+			transform: translateX(0)
 	&.is-visible
 		opacity: 1
-		transform: translateX(0) 				
+		transform: translateX(0)
+	+r(1023)
+		opacity: 1
+		width: 50%
+		margin-bottom: 50px 		 				
 	.benefit__img
 		width: 215px
 		height: 215px
@@ -255,11 +306,14 @@
 	padding-top: 68px
 	+vertical
 	background: url(../img/price-bg.jpg)
+	+cover
 	+r(1440)
 		padding-top: 60px
 	+r(1280)
-		padding-top: 50px 
-	+cover
+		padding-top: 50px
+	+r(1023)
+		height: auto
+		padding: 5% 10px 	 
 	.price__in
 		+clr
 .card
@@ -280,7 +334,7 @@
 		transition: opacity 300ms 300ms, transform 300ms 300ms	
 	&.is-visible
 		opacity: 1
-		transform: scale(1) 	
+		transform: scale(1)	
 	.card__img
 		width: 200px
 		display: inline-block
@@ -313,7 +367,7 @@
 		font-size: 24px
 		color: #2a2a2a
 	+r(1440)
-		padding: 15px
+		padding: 25px 15px
 		.card__list, .card__params, .card__price
 			margin-bottom: 15px
 	+r(1280)
@@ -329,8 +383,24 @@
 			margin-bottom: 10px
 		.card__price
 			margin-bottom: 10px
-			font-size: 20px			
-			 	 
+			font-size: 20px
+	+r(1100)
+		width: 440px
+		margin-left: 5%
+	+r(1023)
+		opacity: 1
+		transform: scale(1)
+	+r(960)
+		width: 425px
+		margin-left: 1% 		 				
+	+r(900)
+		width: 360px
+		padding: 40px 10px 
+		.card__list
+			margin-bottom: 20px
+		.card__params
+			.select
+				margin-bottom: 20px				 	 
 .btn
 	width: 102px
 	height: 102px
@@ -356,6 +426,9 @@
 		padding-top: 60px
 	+r(1280)
 		padding-top: 50px
+	+r(1023)
+		height: auto
+		padding: 5% 10px 	
 	.center
 		width: 100%
 	.title
@@ -370,10 +443,16 @@
 					transform: translate(-40px, -40px)
 					&.is-visible
 						opacity: 1
+						transform: translate(0, 0)
+					+r(1023)
+						opacity: 1
 						transform: translate(0, 0) 
 				&:last-child
 					transform: translate(40px, -40px)
 					&.is-visible
+						opacity: 1
+						transform: translate(0, 0)
+					+r(1023)
 						opacity: 1
 						transform: translate(0, 0) 
 		&:nth-child(2)
@@ -382,10 +461,16 @@
 					transform: translate(-40px, 40px)
 					&.is-visible
 						opacity: 1
+						transform: translate(0, 0)
+					+r(1023)
+						opacity: 1
 						transform: translate(0, 0) 
 				&:last-child
 					transform: translate(40px, 40px)
 					&.is-visible
+						opacity: 1
+						transform: translate(0, 0)
+					+r(1023)
 						opacity: 1
 						transform: translate(0, 0) 				
 	.delivery__item
@@ -443,7 +528,10 @@
 		transition: opacity 300ms, transform 300ms
 		&.is-visible
 			opacity: 1
-			transform: translateY(0) 
+			transform: translateY(0)
+		+r(1023)
+			opacity: 1 
+			transform: translateY(0)	 
 	.feedback__in
 		+clr
 	.feedback__img
@@ -458,6 +546,9 @@
 		&.is-visible
 			opacity: 1
 			transform: scale(1)
+		+r(1023)
+			opacity: 1
+			transform: scale(1) 	
 		img
 			width: 450px
 			height: 450px
@@ -473,7 +564,16 @@
 		.feedback__img
 			img
 				width: 350px
-				height: 350px	
+				height: 350px
+	+r(1023)
+		height: auto
+		padding: 5% 10px 100px
+	+r(900)
+		padding: 5% 10px 150px  
+		.feedback__img
+			img
+				width: 300px
+				height: 300px	
 .comments
 	position: relative
 	width: 52%
@@ -484,7 +584,7 @@
 	transition: opacity 300ms, transform 300ms
 	&.is-visible
 		opacity: 1
-		transform: translateY(0)
+		transform: translateY(0)	
 	.comments__item
 		font-size: 19px
 	.comments__author
@@ -497,6 +597,9 @@
 		.comments__author
 			padding-top: 30px
 			font-size: 19px
+	+r(1023)
+		opacity: 1
+		transform: translateY(0)		
 	.comments__counter
 		position: absolute
 		bottom: -84px
@@ -523,6 +626,9 @@
 		&.is-visible
 			opacity: 1
 			transform: translateY(0)
+		+r(1023)
+			opacity: 1
+			transform: translateY(0)	
 	.history__in
 		position: relative 
 		+clr
@@ -536,7 +642,11 @@
 		transition: opacity 300ms 400ms, transform 300ms 400ms
 		&.is-visible
 			opacity: 1
-			transform: translateY(0) 
+			transform: translateY(0)
+		+r(1023)
+			opacity: 1
+			transform: translateY(0)
+			padding: 0 20px 	 
 		p
 			font-size: 18px
 			line-height: 1.8 
@@ -559,7 +669,10 @@
 		.history__item
 			p
 				font-size: 16px
-				line-height: 1.6 			
+				line-height: 1.6
+	+r(1023)
+		height: auto
+		padding: 5% 10px 			 			
 .round
 	display: inline-block
 	width: 4px
@@ -603,11 +716,16 @@
 			width: 180px
 			height: 180px
 			margin: -95px 0 0 -83px
+		+r(1023)
+			opacity: 1
+			transform: scale(1)	
 
 // contacts
 .contacts
 	position: relative
 	height: 100vh
+	+r(1023)
+		height: auto
 .map
 	position: absolute
 	top: 0
@@ -616,6 +734,13 @@
 	bottom: 260px
 	+r(1440)
 		bottom: 200px
+	+r(1023)
+		position: relative
+		top: auto
+		left: auto
+		right: auto
+		bottom: auto
+		height: 400px	
 .map-popup
 	position: absolute
 	top: 170px
@@ -646,6 +771,14 @@
 	+r(1280)		
 		top: 80px
 		font-size: 16px
+	+r(1100)
+		top: 50%
+		transform: scale(0.7) translate(-50%, -50%)
+		&.is-visible
+			transform: scale(1) translate(-50%, -50%)
+	+r(1023)
+		opacity: 1
+		transform: scale(1) translate(-50%, -50%)		 	
 
 #map-canvas
 	position: absolute
@@ -661,9 +794,6 @@
 	height: 260px
 	padding: 55px 0 60px 
 	background: #1e1e1e
-	+r(1440)
-		height: 200px
-		padding: 35px 0 40px  
 	.footer__in
 		max-width: 1180px
 		margin: 0 auto
@@ -674,8 +804,6 @@
 	.footer__logo	
 		display: inline-block
 		margin-bottom: 80px
-		+r(1440)
-			margin-bottom: 60px
 	.footer__list
 		float: left
 		margin-right: 5%
@@ -689,7 +817,22 @@
 					font-size: 13px
 					text-decoration: none
 				+r(1440)
-					margin-bottom: 25px		
+					margin-bottom: 25px
+	+r(1440)
+		height: 200px
+		padding: 35px 0 40px
+		.footer__logo
+			margin-bottom: 60px
+	+r(1280)
+		padding: 35px 10px 40px
+		.footer__left
+			margin-right: 5%
+	+r(1023)
+		position: relative
+		right: auto
+		left: auto
+		bottom: auto
+		height: auto		 								
 .socials
 	font-size: 0
 	text-align: right
@@ -718,6 +861,10 @@
 			display: inline-block
 			vertical-align: top
 			margin-left: 55px
+			+r(960)
+				display: block
+				margin-left: 0
+				margin-bottom: 20px 
 	.copyrights
 		padding-right: 18px
 		text-align: right

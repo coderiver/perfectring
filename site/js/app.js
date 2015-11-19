@@ -86,7 +86,7 @@ $(document).ready(function() {
 		menu: '#menu',
 		anchors:['home', 'about', 'benefits', 'price',
 		'delivery', 'feedback', 'history', 'order', 'contacts'],
-		responsiveWidth: 1023,
+		responsiveWidth: 1024,
 		afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
 
@@ -174,6 +174,7 @@ $(document).ready(function() {
             center: myLatLng,
             zoom: 15,
             scrollwheel: false,
+            draggable: false,
             styles: styles
         };
         var map = new google.maps.Map(document.getElementById('map-canvas'),
