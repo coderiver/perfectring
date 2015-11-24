@@ -80,7 +80,7 @@ p
 .select__text
 	position: relative
 	height: 46px
-	padding-right: 40px
+	//padding-right: 40px
 	line-height: 44px
 	color: #8f8e8e
 	+proxima-sb
@@ -95,14 +95,26 @@ p
 		border-right: 2px solid #d0cfcf
 		padding: 0 16px
 		&:last-child
-			min-width: 80px 
-	&:after
-		content: ""
-		position: absolute
-		right: 15px
-		top: 50%
-		margin-top: -3px
-		+arr(11, 6, #8f8e8e, b)
+			position: relative
+			//min-width: 80px
+			min-width: 120px
+			text-align: left
+			border-right: none
+			&:before
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				right: 40px
+				width: 2px
+				background: #d0cfcf  
+			&:after
+				content: ""
+				position: absolute
+				right: 15px
+				top: 50%
+				margin-top: -3px
+				+arr(11, 6, #8f8e8e, b)
 	+r(1280)
 		height: 36px
 		line-height: 34px
