@@ -7,6 +7,7 @@ $(document).ready(function() {
 		anchors:['home', 'about', 'benefits', 'price',
 		'delivery', 'feedback', 'history', 'order', 'contacts'],
 		responsiveWidth: 1024,
+		normalScrollElements: '.select__list',
 		afterLoad: function(anchorLink, index){
             var loadedSection = $(this);
 
