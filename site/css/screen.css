@@ -543,7 +543,7 @@ html.fp-enabled, .fp-enabled body { margin: 0; padding: 0; overflow: hidden; -we
  .authors .copyrights{ float: right; padding-right: 0; } }
 
 @media only screen and (max-height: 700px){
- .select__list{ max-height: 100px; } }
+ .select__list{ max-height: 112px; } }
 
 @media only screen and (max-width: 680px){
  .about .col-6{ width: 40%; }
